@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body onload="init()">
+    <main>
+       <div id="welcomeScreen">
+        <h2>Guess The Random Number Between 1-100</h2>
+        <img class="image" src="./images/let.png" alt="logo"/>
+        <section class="eventSection">
+            <p>Select The Dfficulty</p>
+            <div class="button-wrapper">
+                <button onclick="easyMode()">Easy: 10 Attemps</button>
+                <button onclick="hardyMode()">Hard: 5 Attemps</button>
+            </div>
+        </section>
+       </div>
+       <!-- actual secreen start -->
+     
+    </div>
+  
+       <div id="gameArea">
+        <div id="newGameButton">
+          <button onclick="newGameBegin()">New Game</button>
+           </div>
+        <section>
+            <h3 id="textOutput">Your guess</h3>
+            <input type="number" id="inputBox" min="1" 
+            max="100" placeholder="Enter Your Number"
+            onchange="compareGuess()"
+            
+            />
+          </section>
+            <section class="stats">
+              <div class="info">
+                <p>Number Of previous attempts</p>
+                <span id="attemps">0</span>
+              </div>
+              <div class="info">
+                <p>Number Of previous guesses</p>
+                <span id="guesses">0</span>
+              </div>
+            </section>
+          
+       
+      
+      
+      
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
